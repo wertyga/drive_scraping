@@ -1,0 +1,26 @@
+{
+  "modelTitle": "VolkswagenThing",
+  "modelPreview": "https://a.d-cd.net/d35e02es-960.jpg",
+  "cars": [
+    {
+      "link": "https://www.drive2.com/r/volkswagen/thing/4062246863888357263/",
+      "preview": "https://a.d-cd.net/ae0818u/480.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/volkswagen/thing/477581397813363307/",
+      "preview": "https://a.d-cd.net/55fd69s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/volkswagen/thing/780478/",
+      "preview": "https://a.d-cd.net/2c8e01as-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/volkswagen/thing/1373917/",
+      "preview": "https://a.d-cd.net/5f149cas-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/volkswagen/thing/1373888/",
+      "preview": "https://a.d-cd.net/cd9fecas-1920.jpg"
+    }
+  ]
+}

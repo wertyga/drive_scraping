@@ -1,0 +1,654 @@
+{
+  "modelTitle": "LanciaDedra",
+  "modelPreview": "https://a.d-cd.net/92b9e2es-960.jpg",
+  "cars": [
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/455577421362498233/",
+      "preview": "https://a.d-cd.net/9349aes-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376151929457/",
+      "preview": "https://a.d-cd.net/pYAAAgLDfuA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376152046507/",
+      "preview": "https://a.d-cd.net/ykAAAgNZmOA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376152056258/",
+      "preview": "https://a.d-cd.net/8f80f68s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/465944441622888511/",
+      "preview": "https://a.d-cd.net/5726381s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/837539/",
+      "preview": "https://a.d-cd.net/4737554s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1352352/",
+      "preview": "https://a.d-cd.net/CEAAAgOVXeA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/478090471697023013/",
+      "preview": "https://a.d-cd.net/y8AAAgOaJuA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1480131/",
+      "preview": "https://a.d-cd.net/-qfeeiK3l05PxM495mVTiDi2a6U-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/528017095691076958/",
+      "preview": "https://a.d-cd.net/mio-zp7OJGrgxTeHRKt6Xgkyzwk-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/557077/",
+      "preview": "https://a.d-cd.net/cc0a5b6s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/463021389960446113/",
+      "preview": "https://a.d-cd.net/1ddfd49s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1404805/",
+      "preview": "https://a.d-cd.net/bbc55d6s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1106952/",
+      "preview": "https://a.d-cd.net/49589dcs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/477316/",
+      "preview": "https://a.d-cd.net/c69d718s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/4062246863888195290/",
+      "preview": "https://a.d-cd.net/3a8b0eu-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1035247/",
+      "preview": "https://a.d-cd.net/7fb781cs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376152054841/",
+      "preview": "https://a.d-cd.net/486aceu-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376151810865/",
+      "preview": "https://a.d-cd.net/78142du-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1412450/",
+      "preview": "https://a.d-cd.net/qiAAAgC_TOA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/515035986535646017/",
+      "preview": "https://a.d-cd.net/8YAAAgFjpOA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/553579366647333409/",
+      "preview": "https://a.d-cd.net/OQAAAgAG0-A-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/542402830950990258/",
+      "preview": "https://a.d-cd.net/aMAAAgAA4eA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376152114492/",
+      "preview": "https://a.d-cd.net/9238u/480.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/998139/",
+      "preview": "https://a.d-cd.net/c5a1e6cs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/548052396572410020/",
+      "preview": "https://a.d-cd.net/P4AAAgJI2eA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1072356/",
+      "preview": "https://a.d-cd.net/61e5b9cs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1333154/",
+      "preview": "https://a.d-cd.net/61dedf2s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376151781798/",
+      "preview": "https://a.d-cd.net/21451v/480.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/459428185960917301/",
+      "preview": "https://a.d-cd.net/1abad9es-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1599544/",
+      "preview": "https://a.d-cd.net/cf53e06s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/270587/",
+      "preview": "https://a.d-cd.net/1bc3e8s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/509883675047887880/",
+      "preview": "https://a.d-cd.net/VUAAAgEeyOA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1317982/",
+      "preview": "https://a.d-cd.net/e7c1872s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/496439946375069737/",
+      "preview": "https://a.d-cd.net/c715bcds-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1698410/",
+      "preview": "https://a.d-cd.net/d6c69d6s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/553072216909022306/",
+      "preview": "https://a.d-cd.net/d8AAAgAXNeA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/472366139284914622/",
+      "preview": "https://a.d-cd.net/b55bb1s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/579914044522104375/",
+      "preview": "https://a.d-cd.net/5bLqTxeQjYi-E3jiO05YmsGviuY-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/600267104263884676/",
+      "preview": "https://a.d-cd.net/mREEZshyE147uEz0ol6AVuN11mY-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/502012546182545452/",
+      "preview": "https://a.d-cd.net/6f781804k21d-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/503822342321865600/",
+      "preview": "https://a.d-cd.net/2AAAAgMPc-A-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/626064670708469935/",
+      "preview": "https://a.d-cd.net/9pAP5uqnKmsfsh_VC7e5lVIbBgY-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/496587006055285594/",
+      "preview": "https://a.d-cd.net/af6082ds-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/668203/",
+      "preview": "https://a.d-cd.net/71c0344s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1137653/",
+      "preview": "https://a.d-cd.net/76af6bcs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1663383/",
+      "preview": "https://a.d-cd.net/69784e6s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376151887946/",
+      "preview": "https://a.d-cd.net/23e179u-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1448723/",
+      "preview": "https://a.d-cd.net/608b56as-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1174372/",
+      "preview": "https://a.d-cd.net/e098ffcs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1691098/",
+      "preview": "https://a.d-cd.net/bc0b956s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/4062246863888298676/",
+      "preview": "https://a.d-cd.net/6e1756u-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/316787/",
+      "preview": "https://a.d-cd.net/172dd18s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/4035225266124053314/",
+      "preview": "https://a.d-cd.net/ae764eu-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/553112898839249308/",
+      "preview": "https://a.d-cd.net/8MAAAgAwteA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1086598/",
+      "preview": "https://a.d-cd.net/d8cb15cs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376151744555/",
+      "preview": "https://a.d-cd.net/3db3c3u-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376151860370/",
+      "preview": "https://a.d-cd.net/3bf032u-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/539083405346735478/",
+      "preview": "https://a.d-cd.net/IIAAAgBJDeA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376152001496/",
+      "preview": "https://a.d-cd.net/c3e7feu-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376151819304/",
+      "preview": "https://a.d-cd.net/51e08du-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/607418602768848612/",
+      "preview": "https://a.d-cd.net/lY0dhX3xNbHNqBCYq1hqUcLsFQw-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/607713271885086259/",
+      "preview": "https://a.d-cd.net/_wHdHi-3F-iyJivknjD7vGOi9nk-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/502195889746478025/",
+      "preview": "https://a.d-cd.net/6f828404k45d-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1582087/",
+      "preview": "https://a.d-cd.net/eg977as-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/559112109158302105/",
+      "preview": "https://a.d-cd.net/_oAAAgDBw-A-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/462301209844253101/",
+      "preview": "https://a.d-cd.net/c21c53es-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/496168/",
+      "preview": "https://a.d-cd.net/cdee258s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1233099/",
+      "preview": "https://a.d-cd.net/d27a6a2s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/817058/",
+      "preview": "https://a.d-cd.net/9112974s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1567758/",
+      "preview": "https://a.d-cd.net/14a79bas-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/495932/",
+      "preview": "https://a.d-cd.net/b170958s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1040037/",
+      "preview": "https://a.d-cd.net/7dd2a1cs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/622210/",
+      "preview": "https://a.d-cd.net/5650e04s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1668452/",
+      "preview": "https://a.d-cd.net/AaAAAgGVsuA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/4899916394579124099/",
+      "preview": "https://a.d-cd.net/2e3d26u-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/320592/",
+      "preview": "https://a.d-cd.net/e5c21c8s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/476542634203021787/",
+      "preview": "https://a.d-cd.net/b2114a9s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/470738862075805811/",
+      "preview": "https://a.d-cd.net/e3b7d51s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/640004/",
+      "preview": "/assets/images/default/car.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/516648420337779354/",
+      "preview": "https://a.d-cd.net/GgAAAgCB1OA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/467758086052905025/",
+      "preview": "https://a.d-cd.net/7f930a1s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1016232/",
+      "preview": "https://a.d-cd.net/34d5aecs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/496877826880831807/",
+      "preview": "https://a.d-cd.net/26a362ds-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/631386/",
+      "preview": "https://a.d-cd.net/a1e9f5cs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/591942/",
+      "preview": "https://a.d-cd.net/3017f78s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/519830132110656331/",
+      "preview": "https://a.d-cd.net/neAAAgMUCuA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/482064931353526493/",
+      "preview": "https://a.d-cd.net/dfa92b9s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/732461/",
+      "preview": "https://a.d-cd.net/f4d2da4s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1152460/",
+      "preview": "https://a.d-cd.net/d87e67cs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/457756653408782554/",
+      "preview": "https://a.d-cd.net/a829561s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/423573/",
+      "preview": "https://a.d-cd.net/c6087a8s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/460165958263113282/",
+      "preview": "https://a.d-cd.net/9a9c15es-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1497435/",
+      "preview": "https://a.d-cd.net/9bc329as-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1709470/",
+      "preview": "https://a.d-cd.net/1c08b36s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/512265766989464211/",
+      "preview": "https://a.d-cd.net/UQAAAgL32OA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/640464/",
+      "preview": "https://a.d-cd.net/97dd284s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1246624/",
+      "preview": "https://a.d-cd.net/e55f1aes-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1120744/",
+      "preview": "https://a.d-cd.net/cb14e3cs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1224320/",
+      "preview": "https://a.d-cd.net/82f3122s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1170014/",
+      "preview": "https://a.d-cd.net/131f9fcs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/222978/",
+      "preview": "https://a.d-cd.net/10f63bu-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/4899916394579157426/",
+      "preview": "https://a.d-cd.net/14b1c6u-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/4899916394579136335/",
+      "preview": "https://a.d-cd.net/ee5826u-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/516343855616885417/",
+      "preview": "https://a.d-cd.net/ECAAAgPWVOA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1729382256910274742/",
+      "preview": "https://a.d-cd.net/68d6eeu-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1729382256910274737/",
+      "preview": "https://a.d-cd.net/aad6eeu-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/552557370589316482/",
+      "preview": "https://a.d-cd.net/ukAAAgAo1eA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1578557/",
+      "preview": "https://a.d-cd.net/171597as-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376151822773/",
+      "preview": "https://a.d-cd.net/be35f5u-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/362641/",
+      "preview": "https://a.d-cd.net/eb47028s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/490360196829282307/",
+      "preview": "https://a.d-cd.net/788c2d5s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/482063556963991778/",
+      "preview": "https://a.d-cd.net/5cb12b9s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/469187176291107135/",
+      "preview": "https://a.d-cd.net/6f3de1s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376152114967/",
+      "preview": "https://a.d-cd.net/7bf81e8s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/524293324685706367/",
+      "preview": "https://a.d-cd.net/AJAAAgGVYuA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/550779460287213794/",
+      "preview": "https://a.d-cd.net/grQAAgDDJeA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376151980026/",
+      "preview": "https://a.d-cd.net/fb79c1u-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/827061/",
+      "preview": "https://a.d-cd.net/efdc454s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/450913842793348126/",
+      "preview": "https://a.d-cd.net/36fe4ces-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/4062246863888218632/",
+      "preview": "https://a.d-cd.net/37660c5s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1496120/",
+      "preview": "https://a.d-cd.net/2a23c9as-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376152057253/",
+      "preview": "https://a.d-cd.net/ccf758u/480.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1747396655419754235/",
+      "preview": "https://a.d-cd.net/251aaeu-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/142838/",
+      "preview": "https://a.d-cd.net/aab23au-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376152066506/",
+      "preview": "https://a.d-cd.net/5b549eu-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/499432817025876246/",
+      "preview": "https://a.d-cd.net/c0cac1ds-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/488500372910899872/",
+      "preview": "https://a.d-cd.net/d9f2675s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/688426/",
+      "preview": "https://a.d-cd.net/2be0dc4s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1157505/",
+      "preview": "https://a.d-cd.net/58f3d7cs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/4053239664633453201/",
+      "preview": "https://a.d-cd.net/e5444eu-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/549455098531546022/",
+      "preview": "https://a.d-cd.net/bCAAAgJwBeA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/467910368413352490/",
+      "preview": "https://a.d-cd.net/CIAAAgNlX2A-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/516423845087805982/",
+      "preview": "https://a.d-cd.net/qMAAAgEtVOA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/458107122740173123/",
+      "preview": "https://a.d-cd.net/7cc3a1es-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/4062246863888205878/",
+      "preview": "https://a.d-cd.net/329a0eu-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1509216/",
+      "preview": "https://a.d-cd.net/d8bc79as-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376151769182/",
+      "preview": "https://a.d-cd.net/f4f0dd1s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1483801/",
+      "preview": "https://a.d-cd.net/97fb91as-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/512940/",
+      "preview": "https://a.d-cd.net/51c4c38s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376152117462/",
+      "preview": "https://a.d-cd.net/655258cs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/566362/",
+      "preview": "https://a.d-cd.net/ef615b8s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1538963/",
+      "preview": "https://a.d-cd.net/cb076das-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/213673/",
+      "preview": "https://a.d-cd.net/9f43e3u-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/983139/",
+      "preview": "https://a.d-cd.net/42c96acs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/474085225714942462/",
+      "preview": "https://a.d-cd.net/a2b889s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1168590/",
+      "preview": "https://a.d-cd.net/c58a1fcs-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/521120409005851949/",
+      "preview": "https://a.d-cd.net/JoAAAgIm3OA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/516344955128512753/",
+      "preview": "https://a.d-cd.net/Z8AAAgE2VOA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/709184/",
+      "preview": "https://a.d-cd.net/d8ab524s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1656139/",
+      "preview": "https://a.d-cd.net/13edc66s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1034456/",
+      "preview": "https://a.d-cd.net/cc4bd2ds-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/547332216456217323/",
+      "preview": "https://a.d-cd.net/cYAAAgLBGeA-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/469272388442259694/",
+      "preview": "https://a.d-cd.net/43f3be1s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1283011/",
+      "preview": "https://a.d-cd.net/1b11e52s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/685731/",
+      "preview": "https://a.d-cd.net/ec309c4s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/1698069/",
+      "preview": "https://a.d-cd.net/7fe21d6s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/454159875996385685/",
+      "preview": "https://a.d-cd.net/bdfb82es-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/288230376151744571/",
+      "preview": "https://a.d-cd.net/93d3c3u-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/683486/",
+      "preview": "https://a.d-cd.net/8faaec4s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/475118216889237733/",
+      "preview": "https://a.d-cd.net/de14749s-1920.jpg"
+    },
+    {
+      "link": "https://www.drive2.com/r/lancia/dedra/600593384339417552/",
+      "preview": "https://a.d-cd.net/vsUqMNlIghNfgkFI6igfffEGsBw-1920.jpg"
+    }
+  ]
+}
