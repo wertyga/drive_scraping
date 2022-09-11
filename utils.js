@@ -2,17 +2,24 @@ const puppeteer = require('puppeteer');
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
+const configMeta = require('./config_meta');
 
 async function getBrowser() {
 	const browser = await puppeteer.launch({
 		headless: false,
-		args: ['--proxy-server=106.113.188.158:8089'],
+		args: [
+			'--proxy-server=zproxy.lum-superproxy.io:22225'
+		],
 	});
 	browser.fastNewPage = async function(...args) {
 		const page = await browser.newPage(...args);
+		await page.authenticate({
+			username: 'lum-customer-hl_6bbfcca9-zone-data_center-ip-181.215.0.194',
+			password: 'r4sbnv3e82y8'
+		});
 		await page.setRequestInterception(true);
 		page.on('request', (req) => {
-			if (req.resourceType() === 'image') {
+			if (req.resourceType() === 'image' || req.url().endsWith('.css')) {
 				req.abort();
 			} else {
 				req.continue();
@@ -196,6 +203,14 @@ function getNestedFilesFolders(pathFolder, deep, filterFiles) {
 	return result;
 }
 
+async function handleAccessDenied($, callback) {
+	if ($(configMeta.error.accessDeniedSelector).length > 0) {
+		console.log('ACCESS denied');
+		await wait(2000);
+		return callback();
+	}
+}
+
 
 module.exports = {
 	getBrowser,
@@ -203,6 +218,7 @@ module.exports = {
 	getBodyHtmlFromPage,
 	replaceImageTo1920,
 	clearHtmlText,
+	handleAccessDenied,
 	wait,
 	constructPath,
 	intervalParsing,

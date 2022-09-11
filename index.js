@@ -1,6 +1,5 @@
 const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
-const shortID = require('short-id');
 const _ = require('lodash');
 const fs = require('fs');
 const path = require('path');
@@ -129,9 +128,7 @@ async function collectArticles() {
 	const browser = await getBrowser();
 	try {
 		const parsedCarsIds = getParsedCarsIDs();
-		const parsedCarsGenerations = getParsedGenerations();
 		const generationsPaths = collectAllGenerationsFiles()
-			.filter(({ generation }) => !parsedCarsGenerations.includes(generation));
 		const {errors: articlesImagesErrors} = await partialFetch(generationsPaths, async (car) => {
 			return parseCars(car, parsedCarsIds, browser);
 		}, {partial: 2});
@@ -144,6 +141,10 @@ async function collectArticles() {
 	}
 }
 
-
-
 collectArticles()
+
+// -async function() {
+// 	const browser = await getBrowser();
+// 	const page = await browser.fastNewPage();
+// 	page.goto('https://www.drive2.com/r/fiat/stilo/621556123278784194/');
+// }()

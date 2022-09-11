@@ -3,7 +3,7 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 const configMeta = require('./config_meta');
-const {getBrowser, downloadImage} = require('./utils');
+const {getBrowser, downloadImage, wait} = require('./utils');
 
 async function parseCarPostView(pageLink, browser) { // https://www.drive2.ru/l/626169124313115797/
 	const {carPostView} = configMeta;
@@ -15,6 +15,11 @@ async function parseCarPostView(pageLink, browser) { // https://www.drive2.ru/l/
 		const html = await page.evaluate(body => body.innerHTML, bodyHandle);
 		await bodyHandle.dispose();
 		const $ = cheerio.load(html);
+		if ($(configMeta.error.accessDeniedSelector).length > 0) {
+			console.log('ACCESS denied');
+			await wait(2000);
+			return parseCarPostView(pageLink, browser);
+		}
 		
 		$('.c-pic-zoom__label').remove();
 		$('.c-post__pic .o-img > span').remove();

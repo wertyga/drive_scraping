@@ -16,7 +16,8 @@ async function parseCarPage(carPageUrl, browser) { // https://www.drive2.com/r/b
 		const html = await getBodyHtmlFromPage(page, carPageUrl);
 		const $ = cheerio.load(html);
 		if ($(configMeta.error.accessDeniedSelector).length > 0) {
-			await wait();
+			console.log('ACCESS denied');
+			await wait(2000);
 			return parseCarPage(carPageUrl, browser);
 		}
 		
@@ -35,19 +36,18 @@ async function parseCarPage(carPageUrl, browser) { // https://www.drive2.com/r/b
 			console.log({parseCarPage: 'No entireLogbook', carPageUrl});
 		} else {
 			const logbookUrl = `${config.domain}/${entireLogbook}`;
-			articles = await parseLogbookPageByPage(logbookUrl, browser);
-		}
+			const cardLinksAndMainImages = await parseLogbookPageByPage(logbookUrl, browser);
 		//
-
+		
 		// if (!entireLogbook) {
 		// 	console.log({parseCarPage: 'No entireLogbook', carPageUrl});
 		// 	await parseLogbookOnFly(html);
 		// } else {
 		// 	const logbookUrl = `${config.domain}/${entireLogbook}`;
 		// 	const cardLinksAndMainImages = await parseLogbookPageByPage(logbookUrl, browser);
-		// 	const {errors: postErrors, result } = await partialFetch(cardLinksAndMainImages, ({ link, articlePreviews }) => {
-		// 		return parsePostWithLink(link, articlePreviews, browser)
-		// 	}, { partial: 10 });
+		const {errors: postErrors, result} = await partialFetch(cardLinksAndMainImages, ({link, articlePreviews}) => {
+			return parsePostWithLink(link, articlePreviews, browser)
+		}, {partial: 10});
 		//
 		// 	if (postErrors.length > 0) {
 		// 		fs.writeFileSync(path.join(__dirname, `postErrors/${shortID.generate()}.json`), JSON.stringify({
@@ -55,8 +55,9 @@ async function parseCarPage(carPageUrl, browser) { // https://www.drive2.com/r/b
 		// 			carPageUrl,
 		// 		}, null, 2));
 		// 	}
-		// 	articles.push(...result)
+			articles.push(...result)
 		// }
+		}
 		return {
 			mainDescription,
 			gallery,

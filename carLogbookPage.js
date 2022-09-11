@@ -18,7 +18,8 @@ async function parseLogbookPageByPage(logbookUrl, browser) {
 	await firstPage.close();
 	const $ = cheerio.load(html);
 	if ($(configMeta.error.accessDeniedSelector).length > 0) {
-		await wait();
+		console.log('ACCESS denied');
+		await wait(2000);
 		return parseLogbookPageByPage(logbookUrl, browser);
 	}
 	
@@ -48,7 +49,8 @@ async function parseLogbookPage(logbookPageUrl, browser) { // https://www.drive2
 		const html = await getBodyHtmlFromPage(page, logbookPageUrl);
 		const $ = cheerio.load(html);
 		if ($(configMeta.error.accessDeniedSelector).length > 0) {
-			await wait();
+			console.log('ACCESS denied');
+			await wait(2000);
 			return parseLogbookPage(logbookPageUrl, browser);
 		}
 		

@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const {partialFetch} = require('./utils')
+const {partialFetch, handleAccessDenied} = require('./utils')
 const {getFilledFolders} = require('./otherStaff')
 const {parseCarPage} = require('./carPage')
 
@@ -28,23 +28,12 @@ async function parseCar(link, generationPath, index, preview, browser) {
 	const isMaxCarsCount = carsWithArticles.length >= 50;
 	if (isMaxCarsCount) return;
 	
+	console.log(`${link}...`);
 	const carData = await parseCarPage(link, browser);
 	carData.preview = preview;
-	
 	fs.mkdirSync(carPath, {recursive: true});
 	if (carData.articles.length < 1) return;
 	fs.writeFileSync(`${carPath}/_carData.json`, JSON.stringify(carData, null, 2));
-	// if (parsedCarsIds.includes(carId)) return;
-	// const carData = await parseCarPage(link, browser);
-	// const carFilename = `${i + 1}_${carId}_${carData.mainDescription.carTitle}`;
-	// const data = {
-	// 	...carData,
-	// 	rank: i + 1,
-	// 	preview,
-	// 	link,
-	// };
-	//
-	// fs.writeFileSync(`${generationPath}/${carFilename}.json`, JSON.stringify(data, null, 2));
 }
 
 module.exports = {
