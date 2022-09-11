@@ -12,6 +12,7 @@
   "dependencies": {
     "autocannon": "^7.9.0",
     "cheerio": "^1.0.0-rc.12",
+    "lodash": "^4.17.21",
     "puppeteer": "^17.0.0",
     "shelljs": "^0.8.5",
     "short-id": "^0.1.0-1"

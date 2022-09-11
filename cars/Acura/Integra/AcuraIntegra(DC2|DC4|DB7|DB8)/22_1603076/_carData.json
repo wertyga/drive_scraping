@@ -1,0 +1,33 @@
+{
+  "mainDescription": {
+    "carTitle": "Acura Integra",
+    "textBody": "<p>Машина была куплена в январе 2016 года и проделала путь в 1500км из Перми в Москву. Путь к слову был достаточно интересным, захватывающим, олицетворением которому стал богатый и могучий русский язык во всех его вариациях.<br>Машина куплена для душы — тратить с удовольствием время и деньги, реализовывая задуманное. Некий аналог LEGO для взрослых.</p>",
+    "carAttrs": [
+      "Engine 1.8 gasoline  (145 h.p.)",
+      "Automatic",
+      "front-wheel",
+      "Manufactured in 2001, purchased in 2016",
+      "Acura Integra (DC2/DC4/DB7/DB8) in production since 1994"
+    ]
+  },
+  "gallery": [
+    "https://a.d-cd.net/2ca8556s-1920.jpg",
+    "https://a.d-cd.net/4e40b06s-1920.jpg",
+    "https://a.d-cd.net/419de46s-1920.jpg",
+    "https://a.d-cd.net/4f6b06s-1920.jpg"
+  ],
+  "owner": {
+    "name": "Ma-niQ",
+    "link": "https://www.drive2.com/users/ma-niq/"
+  },
+  "articles": [
+    {
+      "link": "https://www.drive2.com/l/8984170/",
+      "articlePreviews": [
+        "https://a.d-cd.net/1dd6b06s-1920.jpg"
+      ]
+    }
+  ],
+  "carPageUrl": "https://www.drive2.com/r/acura/integra/1603076/",
+  "preview": "https://a.d-cd.net/2ca8556s-1920.jpg"
+}

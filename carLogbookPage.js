@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const configMeta = require('./config_meta');
 const config = require('./config');
-const {getBrowser, downloadImage, getBodyHtmlFromPage, replaceImageTo1920, partialFetch } = require('./utils');
+const {wait, downloadImage, getBodyHtmlFromPage, replaceImageTo1920, partialFetch } = require('./utils');
 
 async function parseLogbookOnFly(pageHtml) {
 	const { carPage } = configMeta;
@@ -17,6 +17,10 @@ async function parseLogbookPageByPage(logbookUrl, browser) {
 	const html = await getBodyHtmlFromPage(firstPage, logbookUrl);
 	await firstPage.close();
 	const $ = cheerio.load(html);
+	if ($(configMeta.error.accessDeniedSelector).length > 0) {
+		await wait();
+		return parseLogbookPageByPage(logbookUrl, browser);
+	}
 	
 	let  maxPage = 1;
 	$(carPage.logbook.lastPageLinkSelector).each(function() {
@@ -43,6 +47,10 @@ async function parseLogbookPage(logbookPageUrl, browser) { // https://www.drive2
 	try {
 		const html = await getBodyHtmlFromPage(page, logbookPageUrl);
 		const $ = cheerio.load(html);
+		if ($(configMeta.error.accessDeniedSelector).length > 0) {
+			await wait();
+			return parseLogbookPage(logbookPageUrl, browser);
+		}
 		
 		const linksToCardsView = $(carPage.logbook.logbookCardSelector).map(function() {
 			const href = $(this).find(carPage.logbook.linkToCardViewSelector).attr('href');

@@ -5,7 +5,8 @@ const path = require('path');
 
 async function getBrowser() {
 	const browser = await puppeteer.launch({
-		headless: false
+		headless: false,
+		args: ['--proxy-server=106.113.188.158:8089'],
 	});
 	browser.fastNewPage = async function(...args) {
 		const page = await browser.newPage(...args);
@@ -57,7 +58,7 @@ function replaceImageTo1920(src) {
 	return src.replace(/-\d+\.jpg$/, '-1920.jpg');
 }
 
-function wait (ms) {
+function wait (ms = 1000) {
 	return new Promise(resolve => setTimeout(() => resolve(), ms));
 }
 
@@ -135,8 +136,8 @@ async function partialFetch(
 				.slice(i * partial, i * partial + partial)
 				.map(entity => entity);
 			const data = await Promise.all(
-				currentEntities.map((entity, i) => {
-					return handler(entity, i);
+				currentEntities.map((entity, index) => {
+					return handler(entity, (index + 1) * (i + 1));
 				})
 			);
 			result.push(...data);
@@ -168,11 +169,33 @@ function getFilesFromFolder(folderPath, filter = []) {
 			const files = getFilesFromFolder(entityPath, filter);
 			result.push(...files);
 		} else {
-			result.push(en);
+			result.push({
+				file: en,
+				path: `${folderPath}/${en}`
+			});
 		}
 	});
 	return result;
 }
+
+function getNestedFilesFolders(pathFolder, deep, filterFiles) {
+	const result = [];
+	const entities = fs.readdirSync(pathFolder).filter(ff => !filterFiles.includes(ff));
+	const files = entities.filter(f => fs.statSync(`${pathFolder}/${f}`).isFile());
+	const newEn = entities.filter(en => !files.includes(en));
+	result.push(...files);
+	if (deep === 0) {
+		result.push(...newEn);
+	} else {
+		newEn.forEach(entity => {
+			const tt = getNestedFilesFolders(`${pathFolder}/${entity}`, deep - 1, filterFiles);
+			result.push(...tt);
+		});
+	}
+	
+	return result;
+}
+
 
 module.exports = {
 	getBrowser,
@@ -186,4 +209,5 @@ module.exports = {
 	scrollDown,
 	partialFetch,
 	getFilesFromFolder,
+	getNestedFilesFolders,
 };

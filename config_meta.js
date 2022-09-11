@@ -1,4 +1,8 @@
 const config_meta = {
+	error: {
+		accessDeniedSelector: '.error-i h1',
+		text: '403 — Access is denied',
+	},
 	cars: {
 		url: 'https://www.drive2.com/cars/',
 		carLinkSelector: '.c-makes__item a.c-link'

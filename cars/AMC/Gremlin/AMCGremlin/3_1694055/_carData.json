@@ -1,0 +1,35 @@
+{
+  "mainDescription": {
+    "carTitle": "AMC Gremlin",
+    "textBody": "<p>Пока в 2-х словах. Машина на сайте уже велась. Попробуем завершить начатое.</p><p>Буду признателен за любую информацию по машине.</p><p>Прошу связаться со мной человека который дал наводку на двигатель.</p>",
+    "carAttrs": [
+      "Engine 3.8 gasoline  (100 h.p.)",
+      "Manual",
+      "rear-wheel",
+      "Manufactured in 1975, purchased in 2014",
+      "AMC Gremlin in production since 1970"
+    ]
+  },
+  "gallery": [
+    "https://a.d-cd.net/37adf56s-1920.jpg",
+    "https://a.d-cd.net/d5edf56s-1920.jpg"
+  ],
+  "owner": {
+    "name": "garage81",
+    "link": "https://www.drive2.com/users/garage81/"
+  },
+  "articles": [
+    {
+      "link": "https://www.drive2.com/l/490973724317581582/",
+      "articlePreviews": [
+        "https://a.d-cd.net/f844c35s-1920.jpg",
+        "https://a.d-cd.net/c444c35s-1920.jpg",
+        "https://a.d-cd.net/9444c35s-1920.jpg",
+        "https://a.d-cd.net/82c4c35s-1920.jpg",
+        "https://a.d-cd.net/e2c4c35s-1920.jpg"
+      ]
+    }
+  ],
+  "carPageUrl": "https://www.drive2.com/r/amc/gremlin/1694055/",
+  "preview": "https://a.d-cd.net/37adf56s-1920.jpg"
+}

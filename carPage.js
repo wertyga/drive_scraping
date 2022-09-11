@@ -15,45 +15,54 @@ async function parseCarPage(carPageUrl, browser) { // https://www.drive2.com/r/b
 	try {
 		const html = await getBodyHtmlFromPage(page, carPageUrl);
 		const $ = cheerio.load(html);
+		if ($(configMeta.error.accessDeniedSelector).length > 0) {
+			await wait();
+			return parseCarPage(carPageUrl, browser);
+		}
 		
-		const mainDescription = await parseCarPageArticleBody(page, html);
-		const gallery = await collectImagesFromGallery(html);
+		const entireLogbook = $(carPage.logbookEntireLinkSelector).attr('href');
+		const mainDescription = collectCarPageArticleBody(html);
+		const gallery = collectImagesFromGallery(html);
 		const href = $(carPostView.user.linkSelector).attr('href');
 		const owner = {
 			name: $(carPostView.user.usernameSelector).html(),
 			link: `${config.domain}${href}`,
 		};
 		
-		const entireLogbook = $(carPage.logbookEntireLinkSelector).attr('href');
 		let articles = [];
+		// TEST
 		if (!entireLogbook) {
 			console.log({parseCarPage: 'No entireLogbook', carPageUrl});
-			await parseLogbookOnFly(html);
 		} else {
 			const logbookUrl = `${config.domain}/${entireLogbook}`;
-			const cardLinksAndMainImages = await parseLogbookPageByPage(logbookUrl, browser);
-			
-			return cardLinksAndMainImages;
-			
-			const {errors: postErrors, result } = await partialFetch(cardLinksAndMainImages, ({ link, articlePreviews }) => {
-				return parsePostWithLink(link, articlePreviews, browser)
-			}, { partial: 10 });
-			
-			if (postErrors.length > 0) {
-				fs.writeFileSync(path.join(__dirname, `postErrors/${shortID.generate()}.json`), JSON.stringify({
-					errors: postErrors,
-					carPageUrl,
-				}, null, 2));
-			}
-			articles.push(...result)
+			articles = await parseLogbookPageByPage(logbookUrl, browser);
 		}
-		
+		//
 
+		// if (!entireLogbook) {
+		// 	console.log({parseCarPage: 'No entireLogbook', carPageUrl});
+		// 	await parseLogbookOnFly(html);
+		// } else {
+		// 	const logbookUrl = `${config.domain}/${entireLogbook}`;
+		// 	const cardLinksAndMainImages = await parseLogbookPageByPage(logbookUrl, browser);
+		// 	const {errors: postErrors, result } = await partialFetch(cardLinksAndMainImages, ({ link, articlePreviews }) => {
+		// 		return parsePostWithLink(link, articlePreviews, browser)
+		// 	}, { partial: 10 });
+		//
+		// 	if (postErrors.length > 0) {
+		// 		fs.writeFileSync(path.join(__dirname, `postErrors/${shortID.generate()}.json`), JSON.stringify({
+		// 			errors: postErrors,
+		// 			carPageUrl,
+		// 		}, null, 2));
+		// 	}
+		// 	articles.push(...result)
+		// }
 		return {
 			mainDescription,
 			gallery,
 			owner,
 			articles,
+			carPageUrl,
 		};
 	} catch (e) {
 		console.log({error: e});
@@ -69,7 +78,7 @@ async function parsePostWithLink(link, articlePreviews, browser) {
 	return {...article, articlePreviews};
 }
 
-async function collectImagesFromGallery(pageHtml) {
+function collectImagesFromGallery(pageHtml) {
 	const {carPage} = configMeta;
 	try {
 		const $ = cheerio.load(pageHtml);
@@ -88,7 +97,7 @@ async function collectImagesFromGallery(pageHtml) {
 	}
 }
 
-async function parseCarPageArticleBody(page, pageHtml) {
+function collectCarPageArticleBody(pageHtml) {
 	const {carPage} = configMeta;
 	const $ = cheerio.load(pageHtml);
 	try {
@@ -97,8 +106,9 @@ async function parseCarPageArticleBody(page, pageHtml) {
 			return $(this).text();
 		}).toArray().map(t => t.trim().replace(/\n/g, ''));
 		
+		const carTitle =  $(carPage.carTitleSelector).text();
 		return {
-			carTitle: $(carPage.carTitleSelector).text(),
+			carTitle,
 			textBody,
 			carAttrs,
 		};

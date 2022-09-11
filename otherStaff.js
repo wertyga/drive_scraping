@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-const {getFilesFromFolder} = require('./utils');
+const _ = require('lodash');
+const {getNestedFilesFolders} = require('./utils');
 
 let carsCount = 0;
 function getCarsCount(path) {
@@ -44,13 +45,32 @@ function collectAllGenerationsFiles() {
 }
 
 function getParsedCarsIDs() {
-	const parsedCars = getFilesFromFolder(path.join(__dirname, 'cars'), '_meta.json');
-	return parsedCars.map(car => {
+	const parsedCars = getNestedFilesFolders(path.join(__dirname, 'cars'), 3, ['_meta.json'])
+	return _.uniq(parsedCars.map((car) => {
 		return car.split('_')[1];
-	})
+	}));
+}
+function getParsedGenerations() {
+	const parsedGenerations = getNestedFilesFolders(path.join(__dirname, 'cars'), 2, ['_meta.json'])
+	return _.uniq(parsedGenerations);
+}
+
+function getFilledFolders(rootFolder) {
+	const result = [];
+	const folders = fs.readdirSync(rootFolder).filter(f => f !== '_meta.json');
+	folders.forEach(folder => {
+		const isFolderFull = fs.readdirSync(`${rootFolder}/${folder}`).length > 0;
+		if (isFolderFull) {
+			result.push(folder);
+		}
+	});
+	
+	return result;
 }
 
 module.exports = {
 	collectAllGenerationsFiles,
 	getParsedCarsIDs,
+	getFilledFolders,
+	getParsedGenerations,
 };

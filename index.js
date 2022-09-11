@@ -14,9 +14,11 @@ const {
 	partialFetch,
 	downloadImage,
 	getFilesFromFolder,
+	getNestedFilesFolders,
 } = require('./utils');
+const { parseCars } = require('./parseCars');
 const {parseCarPage} = require('./carPage');
-const {collectAllGenerationsFiles, getParsedCarsIDs} = require('./otherStaff');
+const {collectAllGenerationsFiles, getParsedCarsIDs, getFilledFolders, getParsedGenerations} = require('./otherStaff');
 
 async function scrape() {
 	try {
@@ -124,42 +126,24 @@ async function downloadCarImages({gallery, articles}, carFolder) {
 }
 
 async function collectArticles() {
+	const browser = await getBrowser();
 	try {
 		const parsedCarsIds = getParsedCarsIDs();
-		const generationsPaths = collectAllGenerationsFiles();
-		const browser = await getBrowser();
-		const {errors: articlesImagesErrors} = await partialFetch(generationsPaths, async ({ brand, model, generation, path: pathToFile }) => {
-			const generationPath = path.join(__dirname, 'cars', brand, model, generation);
-			fs.mkdirSync(generationPath, { recursive: true });
-			const { cars, modelTitle, modelPreview } = JSON.parse(fs.readFileSync(pathToFile, 'utf8'));
-			const generationMeta = { modelTitle, modelPreview };
-			fs.writeFileSync(`${generationPath}/_meta.json`, JSON.stringify(generationMeta, null, 2));
-			
-			return partialFetch(cars, async ({ link, preview }, i) => {
-				const carId = link.replace(/\/$/, '').split('/').reverse()[0];
-				const carFolder = `${i + 1}_${carId}`;
-				const carPath = `${generationPath}/${carFolder}`;
-				fs.mkdirSync(carPath, {recursive: true});
-				const carArticles = await parseCarPage(link, browser);
-				
-				fs.writeFileSync(`${carPath}/_articles.json`, JSON.stringify(carArticles, null, 2));
-				// if (parsedCarsIds.includes(carId)) return;
-				// const carData = await parseCarPage(link, browser);
-				// const carFilename = `${i + 1}_${carId}_${carData.mainDescription.carTitle}`;
-				// const data = {
-				// 	...carData,
-				// 	rank: i + 1,
-				// 	preview,
-				// 	link,
-				// };
-				//
-				// fs.writeFileSync(`${generationPath}/${carFilename}.json`, JSON.stringify(data, null, 2));
-			})
-		}, {partial: 1});
+		const parsedCarsGenerations = getParsedGenerations();
+		const generationsPaths = collectAllGenerationsFiles()
+			.filter(({ generation }) => !parsedCarsGenerations.includes(generation));
+		const {errors: articlesImagesErrors} = await partialFetch(generationsPaths, async (car) => {
+			return parseCars(car, parsedCarsIds, browser);
+		}, {partial: 2});
 		
 		console.log(generationsPaths);
 	} catch (e) {
 	  console.log(e);
+	} finally {
+		await browser.close();
 	}
 }
+
+
+
 collectArticles()
